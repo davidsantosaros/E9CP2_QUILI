@@ -1,0 +1,15 @@
+body {
+	background-color:#ccc;
+	margin: 0;
+}
+
+
+
+.publicar{
+	margin-top: 10px;
+		border-radius: 5px;
+}
+
+.strike{
+    text-decoration: line-through;
+}

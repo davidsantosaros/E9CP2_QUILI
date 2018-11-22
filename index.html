@@ -1,0 +1,107 @@
+<!-- Instrucciones
+
+Se pide construir una plataforma tipo Twitter de un sólo usuario.
+
+Requisitos:
+
+Utilizando sistema de grids se debe dividir el viewport en 2 columnas (Se recomienda Bootstrap):
+
+En la columna de la izquierda:
+Crear un campo de texto donde el usuario pueda ingresar el texto del tweet y un botón para confirmar la creación.
+En la columna de la derecha:
+Los tweets deben ser enlistados en bloques. (Cada tweet un nuevo row)
+Cada tweet de la lista debe tener a su lado un link que contenga un icono (❤️) para dar like, un contador de likes (por defecto es cero) y un botón para eliminar el tweet.
+Se recomienda usar Font Awesome para los iconos.
+El link del icono (❤️) debe dar like al tweet. Al hacer esto el icono debe cambiar de color y el contador de likes -de ese tweet- debe aumentar en uno.
+El link del icono (❤️) debe tener una clase likeable. (jQuery)
+Seleccionar con JQuery la clase likeable y agregar el evento click para aumentar el contador en uno.
+El botón de eliminar debe remover el tweet de la lista. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Twitter</title>
+
+    <!-- JQuery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <h1>Tweet</h1>
+    </header>
+
+    <!-- Columna Izquierda-->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <form id="myform"">
+                    <label>
+                        <textarea id="mytext" type=" text"
+                    name="..." id="txt" placeholder="Que Esta Pasando?" maxlength="140" rows="5" cols="50" autofocus
+                    required></textarea>
+                    </label>
+                    <div>
+                        <img src="assets/img/user.png">
+                    </div>
+
+                    <input class="publicar" type="submit" value="Twittear">
+                </form>
+            </div>
+
+
+            <!-- Columna derecha-->
+            <div class="col-md-6">
+                <div id="board">
+                    <div class="note thumbnail">
+
+                        <div>
+                            <button class="pin">X</button>
+
+                        </div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque velit totam exercitationem
+                        fugit vero rerum
+                        doloribus a? Nemo ipsa magni nam maxime sed reprehenderit totam dolorum veniam impedit non.
+                        Magni?
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Main JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
